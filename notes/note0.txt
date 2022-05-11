@@ -1,0 +1,100 @@
+var s_64 = 0.015625
+
+
+
+//경험치 표기
+
+
+if global.drawing_cancle_ui = 0 && global.draw_minimap != 1
+{
+if global.chat_activity = false
+{
+	if global.ui_loc = 0
+	{
+		if instance_number(BG_blind) = 0 && instance_number(player) > 0 && global.inv_open = 0 && global.saving_data <= 0
+		{
+			if global.r_exp_white > 0
+			{
+			draw_sprite_ext(spr_gage_bar,0,mid_xx,yyy-100*camera_yscale,camera_xscale*(s_64*538),camera_xscale*(s_64*28),0,c_white,global.r_exp_white)
+			global.r_exp_white += (-0.05 - global.r_exp_white)/14
+			}
+	
+			if global.o_exp_white > 0
+			{
+			draw_sprite_ext(spr_gage_bar,0,mid_xx,yyy-130*camera_yscale,camera_xscale*(s_64*538),camera_xscale*(s_64*28),0,c_white,global.o_exp_white)
+			global.o_exp_white += (-0.05 - global.o_exp_white)/14
+			}
+	
+	
+	
+		draw_sprite_ext(spr_gage_bar,6,mid_xx,yyy-100*camera_yscale,camera_xscale*(s_64*549),camera_xscale*(s_64*24),0,c_white,1)
+		draw_sprite_ext(spr_gage_bar,2,mid_xx,yyy-100*camera_yscale,camera_xscale*(s_64*645*(global.r_exp/global.max_r_exp)),camera_xscale*(s_64*20),0,c_white,1)
+	
+			if global.r_exp_white > 1
+			{
+			draw_sprite_ext(spr_gage_bar,0,mid_xx,yyy-100*camera_yscale,camera_xscale*(s_64*538),camera_xscale*(s_64*28),0,c_white,global.r_exp_white-1)
+			}
+
+
+		draw_sprite_ext(spr_gage_bar,6,mid_xx,yyy-130*camera_yscale,camera_xscale*(s_64*549),camera_xscale*(s_64*24),0,c_white,1)
+		draw_sprite_ext(spr_gage_bar,3,mid_xx,yyy-130*camera_yscale,camera_xscale*(s_64*645*(global.o_exp/global.max_o_exp)),camera_xscale*(s_64*20),0,c_white,1)
+			if global.o_exp_white > 1
+			{
+			draw_sprite_ext(spr_gage_bar,0,mid_xx,yyy-130*camera_yscale,camera_xscale*(s_64*538),camera_xscale*(s_64*28),0,c_white,global.o_exp_white-1)
+			}
+	
+			if global.drawing_exp = 0
+			{
+			draw_text_k_scale(mid_xx+250*camera_xscale,yyy-105*camera_yscale,"XP : "+string(floor(global.r_exp))+" / "+string(global.max_r_exp),(camera_xscale*2)*15,-1,0.7,c_white,1,1,ko_80,camera_xscale/8,camera_xscale/8,0)
+			draw_text_k_scale(mid_xx+250*camera_xscale,yyy-137*camera_yscale,"Oxygen XP : "+string(floor(global.o_exp))+" / "+string(global.max_o_exp),(camera_xscale*2)*15,-1,0.7,c_white,1,1,ko_80,camera_xscale/8,camera_xscale/8,0)
+			}
+	
+			draw_text_kl_scale(mid_xx,yyy-105*camera_yscale,string(global.r_lv)+" Level",(camera_xscale*2)*15,-1,1,c_white,1,0,ko_80,camera_xscale/7,camera_xscale/7,0)
+			draw_text_kl_scale(mid_xx,yyy-137*camera_yscale,string(global.o_lv)+" Level",(camera_xscale*2)*15,-1,1,c_white,1,0,ko_80,camera_xscale/7,camera_xscale/7,0)
+		}
+	}
+	else
+	{
+		if instance_number(BG_blind) = 0 && instance_number(player) > 0 && global.inv_open = 0 && global.saving_data <= 0
+		{
+			if global.r_exp_white > 0
+			{
+			draw_sprite_ext(spr_gage_bar,0,mid_xx,yy+100*camera_yscale,camera_xscale*(s_64*538),camera_xscale*(s_64*28),0,c_white,global.r_exp_white)
+			global.r_exp_white += (-0.05 - global.r_exp_white)/14
+			}
+	
+			if global.o_exp_white > 0
+			{
+			draw_sprite_ext(spr_gage_bar,0,mid_xx,yy+130*camera_yscale,camera_xscale*(s_64*538),camera_xscale*(s_64*28),0,c_white,global.o_exp_white)
+			global.o_exp_white += (-0.05 - global.o_exp_white)/14
+			}
+	
+	
+	
+		draw_sprite_ext(spr_gage_bar,6,mid_xx,yy+100*camera_yscale,camera_xscale*(s_64*549),camera_xscale*(s_64*24),0,c_white,1)
+		draw_sprite_ext(spr_gage_bar,2,mid_xx,yy+100*camera_yscale,camera_xscale*(s_64*645*(global.r_exp/global.max_r_exp)),camera_xscale*(s_64*20),0,c_white,1)
+	
+			if global.r_exp_white > 1
+			{
+			draw_sprite_ext(spr_gage_bar,0,mid_xx,yy+100*camera_yscale,camera_xscale*(s_64*538),camera_xscale*(s_64*28),0,c_white,global.r_exp_white-1)
+			}
+
+
+		draw_sprite_ext(spr_gage_bar,6,mid_xx,yy+130*camera_yscale,camera_xscale*(s_64*549),camera_xscale*(s_64*24),0,c_white,1)
+		draw_sprite_ext(spr_gage_bar,3,mid_xx,yy+130*camera_yscale,camera_xscale*(s_64*645*(global.o_exp/global.max_o_exp)),camera_xscale*(s_64*20),0,c_white,1)
+			if global.o_exp_white > 1
+			{
+			draw_sprite_ext(spr_gage_bar,0,mid_xx,yy+130*camera_yscale,camera_xscale*(s_64*538),camera_xscale*(s_64*28),0,c_white,global.o_exp_white-1)
+			}
+	
+			if global.drawing_exp = 0
+			{
+			draw_text_k_scale(mid_xx+250*camera_xscale,yy+93*camera_yscale,"XP : "+string(floor(global.r_exp))+" / "+string(global.max_r_exp),(camera_xscale*2)*15,-1,0.7,c_white,1,1,ko_80,camera_xscale/8,camera_xscale/8,0)
+			draw_text_k_scale(mid_xx+250*camera_xscale,yy+124*camera_yscale,"Oxygen XP : "+string(floor(global.o_exp))+" / "+string(global.max_o_exp),(camera_xscale*2)*15,-1,0.7,c_white,1,1,ko_80,camera_xscale/8,camera_xscale/8,0)
+			}
+	
+			draw_text_kl_scale(mid_xx,yy+93*camera_yscale,string(global.r_lv)+" Level",(camera_xscale*2)*15,-1,1,c_white,1,0,ko_80,camera_xscale/7,camera_xscale/7,0)
+			draw_text_kl_scale(mid_xx,yy+124*camera_yscale,string(global.o_lv)+" Level",(camera_xscale*2)*15,-1,1,c_white,1,0,ko_80,camera_xscale/7,camera_xscale/7,0)
+		}
+	}
+}

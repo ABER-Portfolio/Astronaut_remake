@@ -1,0 +1,8 @@
+아이템 추가할때 
+
+code에서 전체 아이템 글로벌 변수 값 증가
+ui_inv에서 조합 법 추가
+crafting_able_items_as 에도 조합 법 추가
+inv_system 폴더에서 아이템 추가 및 조합 아이템(craft_tools_items) 추가
+
+center 스프라이트랑 일반 스프라이트 둘다 추가

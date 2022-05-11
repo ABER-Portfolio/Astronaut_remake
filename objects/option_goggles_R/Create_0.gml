@@ -1,0 +1,12 @@
+/// @description Insert description here
+// You can write your code in this editor
+image_speed = 0
+image_index = 0
+
+text_alpha = 1
+
+t_x = -999
+t_y = -999
+
+pressing = 0
+alarm[1] = 1

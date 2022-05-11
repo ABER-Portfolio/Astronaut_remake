@@ -1,0 +1,1 @@
+global.name = get_string("이름을 적어라", global.name);
