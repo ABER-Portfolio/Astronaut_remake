@@ -27,7 +27,7 @@
 
 ![preview_3](preview2.gif)
 
-- 멀티플레이
+- 멀티플레이 (이때 처음 멀티플레이 방식 만들어본거라 코드 상태가 매우 안좋음)
 
 ![preview_4](preview3.gif)
 
