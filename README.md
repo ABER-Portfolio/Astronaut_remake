@@ -11,26 +11,26 @@
 
 - 미리보기
 
-![preview_a](imgs/preview.gif)
+![preview_0](imgs/preview.gif)
 
 
 대충 주요 코드 내용
 - 랜덤맵 생성
 
-![preview1_1](imgs/preview1_1.gif)
+![preview_1](imgs/preview1_1.gif)
 
-![preview1_2](imgs/preview1_2.PNG)
+![preview_2](imgs/preview1_2.PNG)
 
 - 다중 세이브 파일(맵 파일) 세이브/로드 방식
 
-![preview2](imgs/preview2.gif)
+![preview_3](imgs/preview2.gif)
 
 - 멀티플레이
 
-![preview3](imgs/preview3.gif)
+![preview_4](imgs/preview3.gif)
 
 - 인벤토리 및 상자 알고리즘
 
-![preview4](imgs/preview4.gif)
+![preview_5](imgs/preview4.gif)
 
 등등...
