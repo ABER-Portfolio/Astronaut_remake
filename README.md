@@ -19,7 +19,7 @@
 
 ![preview1_1](imgs/preview1_1.gif)
 
-![preview1_2](imgs/preview1_2.png)
+![preview1_2](imgs/preview1_2.PNG)
 
 - 다중 세이브 파일(맵 파일) 세이브/로드 방식
 
